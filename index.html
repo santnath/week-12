@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My CRUD</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <h1>
+My Basketball Team
+    </h1>
+<div id="team">
+
+</div> 
+
+    <form id="inputForm" class="container-md justify-content-center" action="/action_page.php" method="post">
+        <input type="text" id="firstName" name="firstName" placeholder="First Name" required><br><br>
+        <input type="text" id="lastName" name="lastName" placeholder="Last Name" required><br><br>
+        <input type="text" id="position" name="Position" placeholder="Position" required><br><br>
+        <input type="number" id="jersey" name="jerseyNumber" placeholder="Jersey Number" required> <br><br>
+        <input type="submit" id="submit" class="btn btn-primary">
+        <input type="reset" id="reset" class="btn btn-danger">
+    </form><br>
+   
+    <div class="justify-content-center container">
+        <button id="delete" class="btn btn-dark">Delete Team Member</button>
+    </div>
+    
+    <script src="index.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+</body>
+</html>
